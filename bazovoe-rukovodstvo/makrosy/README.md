@@ -2,24 +2,6 @@
 
 ❎️⛏Все еще не завершено
 
-[Базовые положения](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Базовые-положения)
-
-[Универсальные макросы, которые не зависят от версии используемого листа персонажа](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Универсальные-макросы-которые-не-зависят-от-версии-используемого-листа-персонажа)
-
-* [Универсальные макросы для игроков](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Универсальные-макросы-для-персонажей-игроков)
-* [Универсальные макросы для ДМ-а](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Универсальные-макросы-для-ДМ-а)
-
-[Макросы Shaped](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Макросы-для-shaped)
-
-* [Макросы для игроков Shaped](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Макросы-для-игроков-shaped)
-* [Макросы для ДМ-ов Shaped](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Макросы-для-ДМ-ов-shaped)
-
-[Макросы OGL](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Макросы-для-roll20-5e-ogl)
-
-* [Макросы для игроков OGL](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Макросы-для-игроков-ogl)
-* [Макросы для ДМ-ов OGL](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Макросы-для-ДМ-ов-ogl)
-
-[Перечень макросов, работающих на базовом аккаунте](https://github.com/palikhov/palant_roll20_setup/wiki/01.--Макросы#Перечень-макросов-работающих-в-базовом-аккаунте)
 
 ## Базовые положения
 
@@ -1242,6 +1224,10 @@ Divine Favor
 > |Charisma,+[[@{selected|charisma_mod}]][CHA] ]]&#125;&#125; {{rname=^{charisma-u&#125;&#125;&#125; {{mod=[[ [[@{selected|charisma_mod}]][CHA] ]]&#125;&#125; {{r1=[[@{selected|d20}+[[@{selected|charisma_mod}]][CHA] ]]
 > }}} @{selected|global_skill_mod} @{selected|charname_output}
 > ```
+
+'''&{template:simple}{{?{Roll Type?|Normal,normal|Advantage,advantage|Disadvantage,disadvantage}=1}}?{Ability?|Acrobatics,{{rname=Acrobatics&#125;&#125;{{mod=@{acrobatics_bonus}&#125;&#125; {{r1=[[1d20+@{acrobatics_bonus}]]&#125;&#125;{{r2=[[1d20+@{acrobatics_bonus}]]&#125;&#125;|Animal Handling,{{rname=Animal Handling&#125;&#125;{{mod=@{animal_handling_bonus}&#125;&#125; {{r1=[[1d20+@{animal_handling_bonus}]]&#125;&#125;{{r2=[[1d20+@{animal_handling_bonus}]]&#125;&#125;|Arcana,{{rname=Arcana&#125;&#125;{{mod=@{arcana_bonus}&#125;&#125; {{r1=[[1d20+@{arcana_bonus}]]&#125;&#125;{{r2=[[1d20+@{arcana_bonus}]]&#125;&#125;|Athletics,{{rname=Athletics&#125;&#125;{{mod=@{athletics_bonus}&#125;&#125; {{r1=[[1d20+@{athletics_bonus}]]&#125;&#125;{{r2=[[1d20+@{athletics_bonus}]]&#125;&#125;|Deception,{{rname=Deception&#125;&#125;{{mod=@{deception_bonus}&#125;&#125; {{r1=[[1d20+@{deception_bonus}]]&#125;&#125;{{r2=[[1d20+@{deception_bonus}]]&#125;&#125;|History,{{rname=History&#125;&#125;{{mod=@{History_bonus}&#125;&#125; {{r1=[[1d20+@{History_bonus}]]&#125;&#125;{{r2=[[1d20+@{History_bonus}]]&#125;&#125;|Insight,{{rname=Insight&#125;&#125;{{mod=@{Insight_bonus}&#125;&#125; {{r1=[[1d20+@{Insight_bonus}]]&#125;&#125;{{r2=[[1d20+@{Insight_bonus}]]&#125;&#125;|Intimidation,{{rname=Intimidation&#125;&#125;{{mod=@{Intimidation_bonus}&#125;&#125; {{r1=[[1d20+@{Intimidation_bonus}]]&#125;&#125;{{r2=[[1d20+@{Intimidation_bonus}]]&#125;&#125;|Investigation,{{rname=Investigation&#125;&#125;{{mod=@{Investigation_bonus}&#125;&#125; {{r1=[[1d20+@{Investigation_bonus}]]&#125;&#125;{{r2=[[1d20+@{Investigation_bonus}]]&#125;&#125;|Medicine,{{rname=Medicine&#125;&#125;{{mod=@{Medicine_bonus}&#125;&#125; {{r1=[[1d20+@{Medicine_bonus}]]&#125;&#125;{{r2=[[1d20+@{Medicine_bonus}]]&#125;&#125;|Nature,{{rname=Nature&#125;&#125;{{mod=@{Nature_bonus}&#125;&#125; {{r1=[[1d20+@{Nature_bonus}]]&#125;&#125;{{r2=[[1d20+@{Nature_bonus}]]&#125;&#125;|Perception,{{rname=Perception&#125;&#125;{{mod=@{Perception_bonus}&#125;&#125; {{r1=[[1d20+@{Perception_bonus}]]&#125;&#125;{{r2=[[1d20+@{Perception_bonus}]]&#125;&#125;|Performance,{{rname=Performance&#125;&#125;{{mod=@{Performance_bonus}&#125;&#125; {{r1=[[1d20+@{Performance_bonus}]]&#125;&#125;{{r2=[[1d20+@{Performance_bonus}]]&#125;&#125;|Persuasion,{{rname=Persuasion&#125;&#125;{{mod=@{Persuasion_bonus}&#125;&#125; {{r1=[[1d20+@{Persuasion_bonus}]]&#125;&#125;{{r2=[[1d20+@{Persuasion_bonus}]]&#125;&#125;|Religion,{{rname=Religion&#125;&#125;{{mod=@{Religion_bonus}&#125;&#125; {{r1=[[1d20+@{Religion_bonus}]]&#125;&#125;{{r2=[[1d20+@{Religion_bonus}]]&#125;&#125;|Sleight of Hand,{{rname=Sleight of Hand&#125;&#125;{{mod=@{sleight_of_hand_bonus}&#125;&#125; {{r1=[[1d20+@{sleight_of_hand_bonus}]]&#125;&#125;{{r2=[[1d20+@{sleight_of_hand_bonus}]]&#125;&#125;|Stealth,{{rname=Stealth&#125;&#125;{{mod=@{Stealth_bonus}&#125;&#125; {{r1=[[1d20+@{Stealth_bonus}]]&#125;&#125;{{r2=[[1d20+@{Stealth_bonus}]]&#125;&#125;|Survival,{{rname=Survival&#125;&#125;{{mod=@{Survival_bonus}&#125;&#125; {{r1=[[1d20+@{Survival_bonus}]]&#125;&#125;{{r2=[[1d20+@{Survival_bonus}]]&#125;&#125;}{{charname=@{character_name}}}'''
+
+
 >
 > #### SavesOGL
 
